@@ -7,7 +7,7 @@
           <NuxtLink :to="`/item/${id}`" class="text-2xl font-bold text-gray-900 hover:text-green-900 duration-300 ease">{{name}}</NuxtLink>
           <p class="text-gray-600">{{description}}</p>
         </div>
-        <div class="ml-auto">
+        <div class="ml-auto mr-4">
           <h2 v-if="price.length!=0" class="text-2xl font-bold text-gray-900">{{price}} р.</h2>
           <button></button>
         </div>

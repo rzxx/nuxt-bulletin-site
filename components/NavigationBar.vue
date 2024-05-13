@@ -7,6 +7,9 @@
       <li class="mr-8">
         <NuxtLink to="/list" class="text-xl text-gray-600 hover:text-green-900 duration-300 ease">Объявления</NuxtLink>
       </li>
+      <li class="mr-8">
+        <NuxtLink to="/create-item" class="text-xl text-gray-600 hover:text-green-900 duration-300 ease">Создать объявление</NuxtLink>
+      </li>
       <li>
         <NuxtLink to="/about" class="text-xl text-gray-600 hover:text-green-900 duration-300 ease">О нас</NuxtLink>
       </li>
