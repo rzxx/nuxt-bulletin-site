@@ -1,7 +1,7 @@
 <template>
   <div class="flex w-full bg-gray-100 rounded-lg p-4">
-        <div class="w-48 mr-8">
-          <NuxtLink :to="`/item/${id}`"><img src="/item.jpg" class="object-cover rounded-lg"></NuxtLink>
+        <div class="w-48 mr-8 aspect-square">
+          <NuxtLink :to="`/item/${id}`"><img :src="image" class="w-full h-full object-cover rounded-lg"></NuxtLink>
         </div>
         <div class="h-full">
           <NuxtLink :to="`/item/${id}`" class="text-2xl font-bold text-gray-900 hover:text-green-900 duration-300 ease">{{name}}</NuxtLink>
@@ -26,7 +26,10 @@ defineProps({
     type: Number
   },
   id: {
-    type: Number
+    type: String
+  },
+  image: {
+    type: String
   }
 })
 </script>

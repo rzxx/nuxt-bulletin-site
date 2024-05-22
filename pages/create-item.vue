@@ -1,10 +1,14 @@
 <template>
   <HeadingNormal title="Создание объявления"/>
 
-  <PublishForm/>
+  <PublishForm :id="id" class="mt-4"/>
 </template>
 
 <script lang="ts" setup>
+
+const { data } = await useFetch('/api/getUniqueId')
+const id = data.value
+console.log(id)
 </script>
 
 <style>
