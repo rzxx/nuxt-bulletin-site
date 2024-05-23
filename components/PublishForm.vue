@@ -1,7 +1,8 @@
 <template>
   <div class="max-w-md mx-auto p-4 pt-6 pb-8 mb-4 bg-white rounded-lg shadow-md">
-    <label class="block text-gray-700 text-sm font-bold mb-2" for="title">ID объявления: {{id}}</label>
-    <div class="mb-4">
+    <label class="block text-gray-700 text-sm font-bold" for="title">Ключ-фраза объявления: {{id}}</label>
+    <label class="text-red-900 text-sm font-bold" for="title">Запишите эту фразу, она нужна для управления объявлением!</label>
+    <div class="mb-4 mt-4">
       <label class="block text-gray-700 text-sm font-bold mb-2" for="title">Название</label>
       <input
         type="text"
